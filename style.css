@@ -1,25 +1,37 @@
 :root{
-    --sidebar-width: 250px
+    --sidebar-width: 250px;
+    --color-primary: #0891b2;
+    --color-primary-dark: #0e7490;
 }
 
 body {
     height: 100vh;
     margin: 0;
     font-size: 18px;
+    font-family: 'Dosis', sans-serif;
 }
 
-h5 {
-    margin: 16px 0;
+h4 {
+    margin: 16px 0 4px 0;
 }
 h3{
     margin: 0;
-    padding: 8px;
+    padding: 8px 8px 8px 0;
 }
 
 button {
     width: 100px;
-    border-radius: 24px;
+    border-radius: 30px;
     font-weight: bold;
+    padding: 12px;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--color-primary-dark);
 }
 
 main {
@@ -34,22 +46,44 @@ main {
 
 .header {
     grid-area: header;
-    background-color: cadetblue;
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 24px 40px;
     gap: 30px;
+    box-shadow:2px 5px 10px lightgrey;
+    z-index: 1;
+}
 
+.avatar {
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+}
 
+.notification {
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
 }
 
 .search {
     display: flex;
+    align-items: center;
     gap: 8px;
+}
+.search img {
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
 }
 
 #searchbar{
-    width: 200px;
+    width: 500px;
+    height: 32px;
+    background-color: #e2e8f0;
+    border-radius: 30px;
+    border: none;
 }
 
 .greeting {
@@ -66,19 +100,34 @@ main {
 
 .greeting img {
     grid-row: span 2;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+}
+
+.greet-user {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.user {
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .activity {
     display: flex;
     justify-self: flex-end;
-    gap: 40px;
+    align-items: center;
+    gap: 24px;
 }
 
 .profile {
     display: flex;
-    align-items: start;
-    gap: 8px;
+    align-items: center;
+    gap: 24px;
     justify-self: flex-end;
+    font-weight: bold;
 }
 
 .profile p {
@@ -88,15 +137,22 @@ main {
 
 .sidebar {
     grid-area: sidebar;
-    background-color: lightgrey;
+    background-color: var(--color-primary);
+    color: white;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
+    font-weight: bold;
 
 }
 
 .sidebar > div {
     border: 1px solid black;
+    justify-items: left;
+}
+
+.sidebar p {
+    justify-self: left;
 }
 
 .logo {
@@ -104,6 +160,10 @@ main {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 8px;
+}
+
+.logo p {
+    font-size: 24px;
 }
 
 .navigation {
@@ -128,7 +188,7 @@ main {
 
 .content {
     grid-area: content;
-    background-color: whitesmoke;
+    background-color: #e2e8f0;
     display: grid;
     grid-template-columns: 1fr 350px;
     grid-template-rows: auto 1fr;
@@ -142,17 +202,25 @@ main {
     grid-area: projects;
     padding: 16px;
 
+
 }
 .projects-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     align-self: start;
+
 }
 
 .projects-content div {
-    border: 1px solid black;
     padding: 24px 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:2px 5px 10px lightgrey;
+}
+
+.projects-content p{
+    margin: 0;
 }
 
 .announcements {
@@ -164,15 +232,18 @@ main {
     display: flex;
     flex-direction: column;
     align-self: start;
-    font-size: 14px;
-    border: 1px solid black;
+    font-size: 16px;
     padding: 24px 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:2px 5px 10px lightgrey;
 }
 .announcements-content p {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin: 0 0 16px 0;
 }
 
 .projects-content p {
@@ -193,8 +264,10 @@ main {
     align-items: center;
     justify-content: flex-start;
     gap: 24px;
-    border: 1px solid black;
     padding: 8px 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:2px 5px 10px lightgrey;
 }
 
 .trending-list div {

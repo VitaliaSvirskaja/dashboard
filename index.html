@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
 <main>
     <header class="header">
         <div class="search">
-            <img src="" alt="Search Icon">
+            <img src="images/magnify.png" alt="Search Icon">
             <input type="search" name="searchbar" id="searchbar">
             <label for="searchbar"></label>
         </div>
         <div class="profile">
-            <img src="" alt="Notification Icon">
-            <img src="" alt="Avatar">
+            <img src="images/bell-ring.png" alt="Notification Icon" class="notification">
+            <img src="images/profile.jpg" alt="Avatar" class="avatar">
             <p>Vitalia Svirskaja</p>
         </div>
         <div class="greeting">
-            <img src="" alt="Avatar">
-            <p>Hi there,</p>
-            <p>Vitalia Svirskaja @vitalia</p>
+            <img src="images/profile.jpg" alt="Avatar">
+            <p class="greet-user">Hi there,</p>
+            <p class="user">Vitalia Svirskaja (@vitalia)</p>
         </div>
         <div class="activity">
             <button>New</button>
@@ -47,7 +50,7 @@
             <p>Communities</p>
         </div>
         <div class="settings">
-            <img src="" alt="Settings">
+            <img src="images/settings.png" alt="Settings">
             <p>Settings</p>
             <img src="" alt="Support">
             <p>Support</p>
@@ -61,7 +64,7 @@
             <h3>Your Projects</h3>
             <div class="projects-content">
                 <div>
-                    <h4>Super Cool Project</h4>
+                    <h3>Super Cool Project</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto blanditiis corporis
                         dolores
                         dolorum, ea ipsa ipsum maiores molestias nesciunt nobis odio quos sit veritatis voluptas,
@@ -71,7 +74,7 @@
                         similique ullam? Adipisci, autem ea harum magni odio perferendis quam saepe vitae.</p>
                 </div>
                 <div>
-                    <h4>Less Cool Project</h4>
+                    <h3>Less Cool Project</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque debitis delectus distinctio eos
                         facilis fugiat, harum in minima nesciunt nulla officia perspiciatis placeat, ratione sint sunt
                         tempore tenetur! Alias asperiores consequuntur, deleniti ducimus ex, magnam nostrum obcaecati
@@ -79,7 +82,7 @@
                         quisquam.</p>
                 </div>
                 <div>
-                    <h4>Impossible App</h4>
+                    <h3>Impossible App</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae consectetur consequatur
                         corporis
                         culpa dicta dolores doloribus eligendi eveniet exercitationem explicabo facilis fuga harum id
@@ -90,7 +93,7 @@
                         voluptatum.</p>
                 </div>
                 <div>
-                    <h4>Easy Peasy App</h4>
+                    <h3>Easy Peasy App</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum dolorem inventore
                         quisquam?
                         Ab adipisci cupiditate enim inventore ipsam iusto, laborum nam pariatur recusandae ullam? A amet
@@ -98,7 +101,7 @@
                         minus! Aliquid dolorum iste nesciunt numquam omnis similique soluta sunt voluptatem.</p>
                 </div>
                 <div>
-                    <h4>Add Blocker</h4>
+                    <h3>Add Blocker</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At esse laudantium officiis
                         reprehenderit
                         saepe! A ad commodi consectetur corporis, delectus dicta dolor doloremque dolores doloribus
@@ -108,7 +111,7 @@
                         quo quod recusandae reiciendis sed sunt ullam vero voluptatum?</p>
                 </div>
                 <div>
-                    <h4>Money Maker</h4>
+                    <h3>Money Maker</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam aut, dolorum nam
                         possimus quia sint voluptatum. Architecto cupiditate ea eaque expedita inventore ipsa iste
                         minima
@@ -122,7 +125,7 @@
             <h3>Announcements</h3>
             <div class="announcements-content">
                 <div>
-                    <h5>Site Maintenance</h5>
+                    <h4>Site Maintenance</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, beatae consequuntur corporis
                         error,
                         expedita iure laborum molestiae obcaecati praesentium qui quibusdam, sapiente vero? Ad, beatae
@@ -138,7 +141,7 @@
                         veniam, voluptate.</p>
                 </div>
                 <div>
-                    <h5>Community Share Day</h5>
+                    <h4>Community Share Day</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, beatae consequuntur corporis
                         error,
                         expedita iure laborum molestiae obcaecati praesentium qui quibusdam, sapiente vero? Ad, beatae
@@ -154,7 +157,7 @@
                         veniam, voluptate.</p>
                 </div>
                 <div>
-                    <h5>Updated Privacy Policy</h5>
+                    <h4>Updated Privacy Policy</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, beatae consequuntur corporis
                         error,
                         expedita iure laborum molestiae obcaecati praesentium qui quibusdam, sapiente vero? Ad, beatae
