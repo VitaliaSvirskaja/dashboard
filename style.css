@@ -245,6 +245,9 @@ main {
     overflow: hidden;
     margin: 0 0 16px 0;
 }
+.divider {
+    border: 0.5px solid lightgray;
+}
 
 .projects-content p {
     display: -webkit-box;
