@@ -4,9 +4,12 @@
     --color-primary-dark: #0e7490;
     --width-searchbar: 500px;
 }
+html {
+    height: 100%;
+}
 
 body {
-    height: 100vh;
+    height: 100%;
     margin: 0;
     font-size: 18px;
     font-family: 'Dosis', sans-serif;
@@ -118,6 +121,7 @@ button {
     flex-direction: column;
     gap: 40px;
     font-weight: bold;
+    overflow: scroll;
 
 }
 
